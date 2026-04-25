@@ -2,7 +2,8 @@ package detector_test
 
 import (
 	"testing"
-	"github.com/yourusername/dga-detector/detector"
+
+	"github.com/rodrigocnascimento/h-search/detector"
 )
 
 func TestDetector(t *testing.T) {

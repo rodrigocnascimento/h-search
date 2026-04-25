@@ -1,6 +1,6 @@
 package scoring
 
-import "github.com/yourusername/dga-detector/internal/features"
+import "github.com/rodrigocnascimento/h-search/internal/features"
 
 func Calculate(domain string, f features.Features) float64 {
 	score := 0.0
