@@ -1,6 +1,6 @@
 package scoring
 
-import "github.com/yourusername/dga-detector/internal/features"
+import "github.com/rodrigocnascimento/h-search/internal/features"
 
 func Calculate(domain string, f features.Features) float64 {
 	score := 0.0
@@ -20,11 +20,11 @@ func Calculate(domain string, f features.Features) float64 {
 	}
 
 	if f.ConsonantClusters >= 4 {
-		score += float64(f.ConsonantClusters) * 5
+		score += float64(f.ConsonantClusters) * 7
 	}
 
-	if f.UniqueCharRatio > 0.7 {
-		score += (f.UniqueCharRatio - 0.7) * 50
+	if f.UniqueCharRatio > 0.85 && f.Entropy > 3.5 {
+		score += (f.UniqueCharRatio - 0.85) * 60
 	}
 
 	return score

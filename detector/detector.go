@@ -1,8 +1,8 @@
 package detector
 
 import (
-	"github.com/yourusername/dga-detector/internal/features"
-	"github.com/yourusername/dga-detector/internal/scoring"
+	"github.com/rodrigocnascimento/h-search/internal/features"
+	"github.com/rodrigocnascimento/h-search/internal/scoring"
 )
 
 type Detector struct {
